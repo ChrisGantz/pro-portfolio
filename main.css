@@ -239,6 +239,14 @@ h4 {
   background-color: rgb(3, 56, 112);
   color: gold;
 }
+.copy-email {
+  text-decoration: underline;
+  color: rgb(58, 241, 246);
+}
+.copy-email:hover {
+  cursor: pointer;
+  color: red;
+}
 .demo-code {
   text-align: center;
 }
