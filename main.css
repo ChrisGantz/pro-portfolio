@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+ul {
+  list-style: none;
+}
+p {
+  font-family: Gruppo, cursive;
+  margin: 10px 0;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4 {
+  font-family: 'Staatliches', cursive, sans-serif;
+}
+h3, h4 {
+  letter-spacing: 1px;
+}
+.intro-contact h1 {
+  font-size: 48px;
+}
+.intro-contact h2 {
+  font-size: 32px;
+}
+.white-font {
+  color: gold;
+  /* color: rgb(255, 255, 255); */
+}
+ul a {
+  text-decoration: none;
+  display: block;
+  padding: 25px 20px;
+  color: white;
+  font-weight: 600;
+}
+ul a:hover {
+  background-color: gainsboro;
+  color: goldenrod;
+}
+.navigation {
+  background: linear-gradient(to right, rgba(0, 4, 40, 0.48), rgba(4, 76, 139, 0.48));
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.navigation ul {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(4,1fr);
+}
+@keyframes moveBG{
+  /* from { background-position: 0 0; }
+  to { background-position: 100% 0; } */
+  
+  from {background-position: bottom left;}
+  to {background-position: top right;}
+
+}
+.intro-contact {
+  background-image: url(./pictures/jeremy-thomas-unsplash.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: moveBG 15s alternate linear infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 10px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 10px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+ /* ANIMATION for icons */
+@keyframes spin {
+  from {-webkit-transform: rotateZ(0deg) translateX(100px)}
+  to {-webkit-transform: rotateZ(-360deg) translateX(100px)}
+}
+@keyframes spin2 {
+  from {-webkit-transform: rotateZ(-90deg) translateX(100px)}
+  to {-webkit-transform: rotateZ(-450deg) translateX(100px)}
+}
+@keyframes spin3 {
+  from {-webkit-transform: rotateZ(-180deg) translateX(100px)}
+  to {-webkit-transform: rotateZ(-540deg) translateX(100px)}
+}
+.gmail {
+  width: 32px;
+  height: 30px;
+  animation: spin 10s infinite linear; 
+  -webkit-animation: spin 23s infinite linear;
+}
+.linkedin {
+  width: 32px;
+  height: 30px;
+  animation: spin2 13s infinite linear; 
+  -webkit-animation: spin2 23s infinite linear;
+  /* animation-delay: 4s; */
+}
+#fade-first, #fade-second {
+  display: none;
+}
+.github {
+  width: 32px;
+  height: 30px;
+  animation: spin3 12s infinite linear; 
+  -webkit-animation: spin3 23s infinite linear;
+  /* animation-delay: 6s; */
+}
+.position {
+  position: absolute;
+}
+.me-pic {
+  width: 200px;
+  /* height: 200px; */
+  border-radius: 50%;
+  box-shadow: 0 5px 15px 0px;
+  margin-bottom: 15px;
+  animation: float 4s ease-in-out infinite;
+  -webkit-animation: float 4s ease-in-out infinite;
+  border: 2px solid white;
+}
+.font-size {
+  font-size: 40px;
+}
+.font-size2 {
+  font-size: 45px;
+}
+.fa-icons {
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+}
+.text-center {
+  text-align: center;
+}
+.about-me {
+  padding: 100px 20px;
+}
+.about-me h2 {
+  font-size: 32px;
+}
+.about-me p {
+  letter-spacing: 1px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* ****************Project section************ */
+
+.project-img {
+  width: 100%;
+  height: 100%;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 20px 15px 0 15px;
+}
+.project2 {
+  padding: 70px 30px 20px 30px;
+}
+
+.tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-area {
+  max-height: 70px;
+  margin: 10px 10px;
+}
+.project-img-python {
+  width: 85%;
+  padding: 5px;
+  margin: 0 auto;
+}
+.python {
+  justify-content: center;
+}
+.outer-project {
+  background-color: gainsboro;
+  padding: 50px 0 70px 0;
+  width: 100%;
+}
+.outer-project2 {
+  background-color: white;
+  padding: 20px 0 70px 0;
+}
+
+h3 {
+  margin: 50px 0 10px 0;
+
+}
+h4 {
+  margin-top: 20px;
+}
+
+.contact-me-bottom {
+  padding: 20px 0 40px 0;
+  text-align: center;
+  background-color: rgb(3, 56, 112);
+  color: gold;
+}
+.demo-code {
+  text-align: center;
+}
+
+ /* ******************MOBILE DEVICES********************** */
+ @media only screen and (min-width: 980px) {
+  .navigation {
+    background: linear-gradient(to right, rgb(0, 4, 40), rgb(4, 76, 139));
+  }
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .fa-icons {
+    padding-top: 100px;
+    padding-right: 30px;
+  }
+  .project {
+    padding: 70px 30px 20px 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .project2 {
+    padding: 70px 30px 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .project-info {
+    width: 30%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 20px;
+  }
+  .project-img-container {
+    width: 50%;
+  }
+  .project-img {
+    padding: 25px;
+  }
+  .project-img-python {
+    width: 26%;
+    margin: 0;
+  }
+  .outer-project {
+    padding: 20px 0 70px 0;
+  }
+  .icon-area {
+    width: 5%;
+  }
+  .no-margin {
+    margin: 0;
+  }
+  .python {
+    width: 25%;
+  }
+}

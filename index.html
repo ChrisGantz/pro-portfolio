@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chris Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <main>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="intro-contact">
+      <div class="text-center link-icon">
+        <img class="me-pic" src="./pictures/MeCropped.jpg" alt="Picture of Chris">
+        <h1 class="white-font" id="fade-first">Chris Gonzalez</h1>
+        <h2 class="white-font" id="fade-second" >Software Developer</h2>
+        <div class="fa-icons">
+          <a class="position gmail font-size" href="mailto:chris.gonzalez836@gmail.com">
+            <i class="fa fa-envelope-o font-size"></i>
+          </a>
+          <a class="position linkedin font-size" href="https://www.linkedin.com/in/chris-gonzalez-70a54416a/" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+          <a class="position github font-size" href="https://github.com/ChrisGantz" target="_blank">
+            <i class="fa fa-github font-size"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="about-me">
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Christopher, or “Chris” for short. I am a full stack developer passionate about programming.
+          What I thought would be interesting to learn soon became a career. If there was no a job, I would code at least
+          1 hour a day as its something I've come to enjoy doing.
+        </p>
+        <p>
+          I enjoy working on a team. I have had great experiences in the past as well as hardships and how to deal with
+          them, but I am definitely a team player. I graduated from a boot camp called Thinkful, where they showed us how
+          to pair program. Our last project was in fact a group project and I enjoyed the ability to bounce ideas of each
+          other. There may be things you don’t know that someone else does. I think having a team really makes the
+          experience greater!
+        </p>
+        <p>
+          More about me! I am 21 years old and have not necessarily always been around computers, but I was around
+          machines, cars, and a lot of math. I love strategy and puzzle type games; chess being one of my favorite pass
+          times. I am a Full Stack Developer though I would prefer to specialize creating the Back-end. My ultimate goal
+          is to work with Artificial Intelligence, Machine Learning, Neuro-networks, and Augmented Reality. That is the
+          goal and the future!<i class="fa fa-connectdevelop"></i>
+        </p>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="projects" id="projects">
+        <div class="outer-project">
+          <div class="project">
+            <div class="project-img-container">
+              <img  class="project-img" src="./pictures/writingprompts.jpg" alt="https://writing-concepts.herokuapp.com">
+            </div>
+            <div class="project-info">
+              <h3>Writing Concepts</h3>
+              <p>
+                A simple app built to give people the chance make their ideas into stories. 
+                Users log in and post any main idea they think is interesting and other users can comment on that idea\
+                and expand upon it, liking any posts they enjoyed.  
+              </p>
+              <h4>Techologies</h4>
+              <p>
+                This project was built in React using Node.js/Express and Mongodb on the back end.
+                It was deployed on Heroku using mlab database service.
+              </p>
+              <p class="demo-code">
+                <a href="https://github.com/ChrisGantz/stories-client" target="_blank">Code&nbsp;</a><a
+                  href="https://writing-concepts.herokuapp.com/" target="_blank">- Demo</a>
+              </p>
+            </div>
+          </div>
+          <div class="tech-used">
+            <img class="icon-area" src="./pictures/css.jpg" alt="">
+            <img class="icon-area" src="./pictures/javascript.png" alt="">
+            <img class="icon-area" src="./pictures/reactjs.png" alt="">
+            <img class="icon-area" src="./pictures/nodejs.png" alt="">
+            <img src="./pictures/mongo.png" alt="" min-width="20%" height="80px">
+          </div>
+        </div>
+        <div class="outer-project2">
+          <div class="project2">
+            <div class="project-img-container">
+              <img  class="project-img" src="./pictures/podquest.jpg" alt="https://podquest-app.herokuapp.com">
+            </div>
+            <div class="project-info">
+              <h3 class="no-margin">PodQuest</h3>
+              <p>
+                Love listening to podcasts?! Then this app is for you! keep track of favorite epsidoes or subscribe to the channel altogether.
+              </p>
+              <h4>Contribution</h4>
+              <p>Tasked with setting up the front end and back end for user authentication and favorites.</p>
+              <h4>Co-collaborators</h4>
+              <p>
+                Shelly Leung: API call to itunes, React table, subscriptions page and route<br >
+                John Cosgrove: React component testing and debugging <br>
+                Clinton Owen: Embedded media player, testing, CSS, parsed data from xml <br >
+                Kathy LeBoeuf: Responsive CSS Design
+              </p>
+              <h4>Techologies</h4>
+              <p>
+                This project was built in React using Node.js/Express and Mongodb on the back end. Monkey howler made the Embedded media player possible
+                It was deployed on Heroku using mlab database service.
+              </p>
+              <p class="demo-code no-margin">
+                <a href="https://github.com/thinkful-ei23/podquest-server" target="_blank">Code&nbsp;</a><a href="https://podquest-app.herokuapp.com/" target="_blank">-&nbsp;Demo</a>
+              </p>
+            </div>
+          </div>
+          <div class="tech-used">
+            <img class="icon-area" src="./pictures/css.jpg" alt="">
+            <img class="icon-area" src="./pictures/javascript.png" alt="">
+            <img class="icon-area" src="./pictures/reactjs.png" alt="">
+            <img class="icon-area" src="./pictures/nodejs.png" alt="">
+            <img class="icon-area" src="./pictures/mongo.png" alt="https://www.iconfinder.com/samatodedara">
+          </div>
+        </div>
+        <div class="outer-project">
+          <div class="project">
+            <div class="project-img-python">
+              <img  class="project-img" src="./pictures/snakegame.jpg" alt="https://writing-concepts.herokuapp.com">
+            </div>
+            <div class="project-info python">
+              <h3 class="no-margin">Snake Game</h3>
+              <p>
+                I was tasked with finding a new technology and applying it within a week. I choose python because of its wide use and
+                versatilty.
+              </p>
+              <h4>Techologies</h4>
+              <p>
+                This project used a python library called pygame!
+              </p>
+            </div>
+          </div>
+          <div class="tech-used">
+            <img class="icon-area" src="./pictures/python.png" alt="http://www.oxygen-icons.org/">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <section class="contact-me-bottom">
+        <a class="font-size2" href="mailto:chris.gonzalez836@gmail.com">
+          <i class="fa fa-envelope-o"></i>
+        </a>
+        <a class="font-size2" href="https://www.linkedin.com/in/mvpchrisgonzalez/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+        <p>Thank you for your time!</p>
+        <p>©2019 Chris Gonzalez</p>
+      </section>
+    </div>
+  </main>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+<!-- react and javascript icon https://www.iconfinder.com/Sennerstad -->
+ <!-- mongo node icons https://www.iconfinder.com/samatodedara -->
