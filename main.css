@@ -4,13 +4,6 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
-*[id]:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -70px; 
-  height: 75px; 
-  visibility: hidden; 
-}
 
 ul {
   list-style: none;
@@ -308,4 +301,11 @@ h4 {
   .python {
     width: 25%;
   }
+}
+
+.anchor {
+  display: block;
+  height: 68px;
+  margin-top: -65px;
+  visibility: hidden;
 }
