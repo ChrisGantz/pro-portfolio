@@ -242,6 +242,7 @@ h4 {
   text-align: center;
   background-color: rgb(3, 56, 112);
   color: gold;
+  margin-bottom: -3px;
 }
 .copy-email {
   text-decoration: underline;
