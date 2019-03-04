@@ -183,10 +183,7 @@ i {
   flex-wrap: wrap;
 }
 
-.project {
-  padding: 20px 15px 0 15px;
-}
-.project2 {
+.project, .project2 {
   padding: 70px 30px 20px 30px;
 }
 
