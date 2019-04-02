@@ -9,7 +9,7 @@ $(document).ready(function () {
     click: e => document.execCommand('copy'),
     copy: e => {
       if (e.originalEvent.clipboardData) {
-        e.originalEvent.clipboardData.setData('text/plain', '$(this)[0].title');
+        e.originalEvent.clipboardData.setData('text/plain', e.target.title);
         alert('Email copied to clipboard!');
         e.preventDefault();
       } else {
